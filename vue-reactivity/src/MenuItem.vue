@@ -1,11 +1,14 @@
+<vbase>
 <script setup>
 
 </script>
 
 <template>
-  <h1>Cailyn's Kitchen</h1>
+
 </template>
 
 <style scoped>
 
 </style>
+
+</vbase>
