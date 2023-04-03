@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-=======
-<vbase>
-<script setup>
-
-</script>
-
->>>>>>> parent of 6ed2215 (kms)
 <template>
-
+<div>
+  <img src="{{ menu.img }}" alt="">
+  <h1>{{ menu.name }}</h1>\
+  <p>${{ menu.price }}</p>
+  <button>Add to Cart</button>
+</div>
 </template>
 
 <script>
@@ -23,5 +20,3 @@ export default {
 <style scoped>
 
 </style>
-
-</vbase>
