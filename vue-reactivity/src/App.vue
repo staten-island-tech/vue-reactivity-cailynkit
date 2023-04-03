@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <div id="app">
       <h1>Cailyn's Kitchen</h1>
@@ -29,12 +30,21 @@
       />
     </section>
   </div>
+=======
+<script setup>
+
+</script>
+
+<template>
+  <h1>Cailyn's Kitchen</h1>
+>>>>>>> parent of 6ed2215 (kms)
 </template>
 
 <script>
 import Card from "./TheCard.vue";
 import Item from "./TheItem.vue";
 
+<<<<<<< HEAD
 export default {
   components: {
     Card,
@@ -228,3 +238,6 @@ export default {
   height: 100%;
 }
 </style> -->
+=======
+</style>
+>>>>>>> parent of 6ed2215 (kms)
