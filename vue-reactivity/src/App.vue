@@ -1,16 +1,20 @@
 <template>
   <div>
     <h1>Cailyn's Kitchen</h1>
+    <div id="idk">
+      <Cart />
+      <Fruit />
+    </div>
 </div>
 </template>
 
 <script>
-import MenuItem from "./MenuItem.vue";
+import Fruit from "./MenuItem.vue";
 import Cart from "./cart.vue";
 
 export default {
   components: {
-    MenuItem,
+    Fruit,
     Cart,
   },
   data () {
@@ -40,4 +44,6 @@ export default {
   };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
