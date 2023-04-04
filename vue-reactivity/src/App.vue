@@ -1,9 +1,10 @@
 <template>
   <div>
     <div class="topbar">
-      <h1>Cailyn's Kitchen</h1>
-      <Cart :items="items" :total="total" />
+      <p>Cart</p>
+      <Cart class="cart" :items="items" :total="total" />
     </div>
+    <h1 class="ck">Cailyn's Kitchen</h1>
     <Fruit
       v-for="menu in menus"
       :key="menu"
@@ -70,5 +71,22 @@ export default {
   top: 0px;
   left: 0px;
   background-color: rgb(81, 162, 255);
+  justify-content: right;
+}
+
+.ck {
+  color: white;
+  margin: auto;
+  position: relative;
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.cart {
+  margin-top: 20px;
+  margin-right: 45px;
+  position: relative;
 }
 </style>
