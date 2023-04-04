@@ -1,10 +1,14 @@
 <template>
   <div>
     <h1>Cailyn's Kitchen</h1>
-    <div id="idk">
-      <Cart />
-      <Fruit />
-    </div>
+    <Cart
+    :items="items"
+    :total="total"/>
+    <Fruit
+    v-for="menu in menus"
+    :name="menu.name"
+    :price="menu.price"
+    @button-clicked="add"/>
 </div>
 </template>
 
@@ -19,7 +23,9 @@ export default {
   },
   data () {
     return {
-      menu: [
+      items: 0,
+      total: 0,
+      menus: [
   {
     img: "https://www.gardeningknowhow.com/wp-content/uploads/2021/07/strawberry.jpg",
     name: "Strawberry",
@@ -40,7 +46,13 @@ export default {
     name: "Blackberry",
     price: 999,
 }]}
-    }
+    },
+    methods: {
+      add() {
+        this.items = this.items + 1
+        this.total = this.total
+      }
+    },
   };
 </script>
 
