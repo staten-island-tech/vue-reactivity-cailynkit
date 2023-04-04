@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  name: "Fruit",
   props: {
     img: String,
     name: String,
@@ -18,10 +19,5 @@ export default {
 </script>
 
 <style scoped>
-#card {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  color: black;
-}
+
 </style>
