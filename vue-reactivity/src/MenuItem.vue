@@ -15,7 +15,7 @@ export default {
   props: {
     img: String,
     name: String,
-    price: String
+    price: Number
   }
 }
 </script>
@@ -30,7 +30,7 @@ export default {
 
 .box {
   height: 10%;
-  width: 10%;
+  width: 40%;
   margin: 30px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
@@ -56,7 +56,6 @@ img {
 }
 
 .button {
-  display: block;
-  justify-content: center;
+  align-content: center;
 }
 </style>

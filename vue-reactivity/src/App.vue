@@ -5,14 +5,16 @@
       <Cart class="cart" :items="items" :total="total" />
     </div>
     <h1 class="ck">Cailyn's Kitchen</h1>
-    <Fruit
-      v-for="menu in menus"
-      :key="menu"
-      :img="menu.img"
-      :name="menu.name"
-      :price="menu.price"
-      @button-clicked="add"
-    />
+    <div class="box">
+      <Fruit
+        v-for="menu in menus"
+        :key="menu"
+        :img="menu.img"
+        :name="menu.name"
+        :price="menu.price"
+        @button-clicked="add"
+      />
+    </div>
   </div>
 </template>
 
@@ -56,7 +58,7 @@ export default {
   methods: {
     add() {
       this.items = this.items + 1
-      this.total = this.total
+      this.total = this.total + this.price
     }
   }
 }
@@ -88,5 +90,10 @@ export default {
   margin-top: 20px;
   margin-right: 45px;
   position: relative;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
 }
 </style>
